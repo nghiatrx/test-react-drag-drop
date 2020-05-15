@@ -1,22 +1,24 @@
 import React from "react";
-import Moveable from "./Moveable";
+import MoveableContainer from "./MoveableContainer";
+import MoveableItem from "./MoveableItem";
 import styled from "styled-components";
 
 function App() {
   return (
-    <Wrapper>
-      <Moveable>
-        <Item1 />
-      </Moveable>
-
-      <Moveable>
-        <Item2 />
-      </Moveable>
-
-      <Moveable>
-        <img alt="" src="https://via.placeholder.com/150" />
-      </Moveable>
-    </Wrapper>
+    <div>
+      <MoveableContainer>
+        <MoveableItem>
+          <Item1 />
+        </MoveableItem>
+        <MoveableItem>
+          <Item2 />
+        </MoveableItem>
+        <MoveableItem>
+          <img alt="" src="https://via.placeholder.com/150" />
+          <Item1 />
+        </MoveableItem>
+      </MoveableContainer>
+    </div>
   );
 }
 
@@ -34,17 +36,6 @@ const Item2 = styled.div`
   background-color: blue;
   touch-action: none;
   user-select: none;
-`;
-
-const Wrapper = styled.div`
-  width: 100%;
-  height: 400px;
-  background-color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  touch-action: none;
 `;
 
 export default App;
