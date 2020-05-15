@@ -14,6 +14,9 @@ function App() {
           <Item2 />
         </MoveableItem>
         <MoveableItem>
+          <h1>Hello</h1>
+        </MoveableItem>
+        <MoveableItem>
           <img alt="" src="https://via.placeholder.com/150" />
           <Item1 />
         </MoveableItem>
