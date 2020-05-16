@@ -14,7 +14,9 @@ function App() {
           <Item2 />
         </MoveableItem>
         <MoveableItem>
-          <h1>Hello</h1>
+          <div>
+            <h1>Hello</h1>
+          </div>
         </MoveableItem>
         <MoveableItem>
           <img alt="" src="https://via.placeholder.com/150" />
@@ -29,16 +31,12 @@ const Item1 = styled.div`
   width: 100px;
   height: 100px;
   background-color: rgb(245, 230, 99);
-  touch-action: none;
-  user-select: none;
 `;
 
 const Item2 = styled.div`
   width: 100px;
   height: 100px;
   background-color: blue;
-  touch-action: none;
-  user-select: none;
 `;
 
 export default App;
